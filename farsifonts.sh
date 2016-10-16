@@ -11,8 +11,8 @@ function detect(){
   type -P $1  || { echo "Require $1 but not installed. Aborting." >&2; exit 1; }
 }
 
-# Address of toc file, I keep this file updated.
-readonly URL="http://fzerorubigd.github.com/persian-fonts-linux/list"
+# Address of toc file, I keep this file updated. you can edit this file from this Address: https://gist.github.com/nuved/184b33453179dc2aa08feafc5b4bdb63
+readonly URL="https://gist.githubusercontent.com/nuved/184b33453179dc2aa08feafc5b4bdb63/raw/8de50b5156fce2019301c14d4ce9747bdae98945/gistfile1.txt"
 readonly TOC="/tmp/list.txt"
 
 if [ $# -eq 0 ]; then
